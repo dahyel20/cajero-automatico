@@ -1,0 +1,248 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+html
+{
+    background-image: linear-gradient(to right top, #112b5a, #284073, #3e568c, #536ea7, #6986c2, #8098d0, #96aadf, #acbced, #c5cbf1, #dadcf5, #eeedfa, #ffffff);
+    font-family: 'Montserrat', sans-serif;
+    font-size:  62.5%;
+}
+
+.container
+{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.cajero_container
+{
+    background-color: rgb(32, 32, 33);
+    width: 70%;
+    margin:5% auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; 
+    border-radius: 10%;
+}
+
+.cajero
+{
+    margin: auto;
+    width: 95%;
+    max-width: 800px;
+    height: 90%;
+    background-image: linear-gradient(to right top, #3b3b3b, #3e3e3e, #424242, #454545, #494949, #484848, #484848, #474747, #424242, #3d3d3d, #393939, #343434);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    perspective: 150px;
+}
+
+.arriba
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 95.1%;
+    width: 92.1%;
+    height: 5%;
+    transform: rotateX(-115deg);
+    z-index: 1;
+    background-color: #333333;
+}
+
+.derecha
+{
+    border-top-left-radius: 10px;
+    position: absolute;
+    left: 1.3%;
+    width: 5%;
+    height: 87.3%;
+    background-color: #000000;
+    transform: rotateY(14deg);
+}
+
+.izquierda
+{
+    border-top-right-radius: 10px;
+    position: absolute;
+    right: 1.3%;
+    width: 5%;
+    height: 87.3%;
+    background-color: #000000;
+    transform: rotateY(-14deg);
+}
+
+.parte_pantalla
+{
+    height: 60%;
+    width: 85%;
+    margin-top: 20px;
+    background-image: linear-gradient(to right top, #7a7a7a, #878787, #949494, #a1a1a1, #aeaeae, #adadad, #adadad, #acacac, #9e9e9e, #909090, #828282, #747474);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantalla
+{
+    width: 90%;
+    height: 85%;
+    background:linear-gradient(rgba(255, 255, 255, 0.544),rgba(255, 255, 255, 0.042),rgba(255, 255, 255, 0.459)),url(./image/fonfo_cajero.png) ;
+    border: 4px solid #000000;
+    font-size: 1.9rem;
+    color: #00152f;
+    font-family: 'Montserrat', sans-serif;;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+p.resultado
+{
+    line-height: 130%;
+    color: rgb(255, 0, 0);
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+} 
+
+p.resultadox
+{
+    color: rgb(0, 255, 38);
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+
+.pantalla input
+{
+    margin-top: 20%;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid rgb(255, 255, 255);
+    font-size: 3.0rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.pantalla input:hover
+{
+    border-bottom:1px solid rgb(5, 130, 255);
+}
+
+
+.teclado
+{
+    position: absolute;
+    gap: 5px;
+    bottom: 14.1%;
+    right: 4.1%;
+    width: 91.99%;
+    height: auto;
+    background-color: #4a4a4a;
+    transform: rotatex(10deg);
+    padding-bottom: 1%;
+}
+
+.contenedor_teclas
+{
+    margin: auto;
+    padding: 2%;
+    background-image: linear-gradient(to left bottom, #ffffff35, #eeedfa32, #dadcf541, #c5cbf12b, #9399a9, #383839a6, #383839a6, #2e2e30c0, #c5cbf192, #dadcf550, #eeedfa3b, #ffffff28);
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 20px;
+}
+
+
+
+.contenedor_teclas button
+{
+    background-color: rgb(255, 255, 255);  
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-box-shadow: 0px 4px 10px -2px rgba(71,71,71,1);
+    -moz-box-shadow: 0px 4px 10px -2px rgba(71,71,71,1);
+    box-shadow: 0px 4px 10px -2px rgba(71,71,71,1);
+}
+
+
+.contenedor_teclas button:hover
+{
+    cursor: pointer;
+    scale: 1.1;
+    -webkit-box-shadow: 0px 4px 10px -2px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 4px 10px -2px rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px -2px rgb(255, 255, 255);
+    color: rgb(5,143,235,1);
+}
+
+
+button.cancelar
+{
+    background: red;
+}
+
+button.aceptar
+{
+    background: rgb(85, 255, 0);
+}
+
+.dinero
+{
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    background-color: rgb(32, 32, 32);
+    bottom: 3%;
+}
+
+
+.billetes_contenerdor
+{ 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 89.9%;
+    width: 80%;
+    height: auto;
+    overflow-y: visible;
+}
+
+.dinero_efectivo
+{
+    border: 1px solid rgb(24, 90, 3);
+    margin-bottom: -7.2%;
+    max-width: 200px;
+    width: 50%;
+    height: 100px;
+    font-size: 2.0rem;
+
+} 
+
+
+
+
+.dinero_efectivo img
+{
+    width: 100%;
+    height: 100%;
+}
+

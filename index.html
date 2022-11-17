@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <h1>CAJERO AUTOMATICO</h1>
+        <p>-no se pueden retirar billetes de 5.000</p>
+        <p>-cuando termines tu retiro preciona x</p>
+        <div class="cajero_container">
+            <div class="cajero">
+                <div class="arriba"></div>
+                <div class="derecha"></div>
+                <div class="izquierda"></div>
+                <div class="parte_pantalla">
+                    <div class="pantalla">
+                        <p>cuanto quieres retirar?</p>
+                        <input class="numeros" type="text">
+                        <p class="resultado"></p>
+                    </div>
+                </div>
+                <div class="teclado">
+                    <div class="contenedor_teclas">
+                        <button class="boton" value="0">0</button>
+                        <button class="boton" value="1">1</button>
+                        <button class="boton" value="2">2</button>
+                        <button class="boton" value="3">3</button>
+                        <button class="cancelar">✖</button>
+                        <button class="boton" value="4">4</button>
+                        <button class="boton" value="5">5</button>
+                        <button class="boton" value="6">6</button>
+                        <button class="aceptar">✔</button>
+                        <button class="boton" value="7">7</button>
+                        <button class="boton" value="8">8</button>
+                        <button class="boton" value="9">9</button>
+                    </div>
+                </div>
+                <div class="dinero"></div>
+            </div>
+            <div class="billetes_contenerdor">
+            </div>
+            
+        </div>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
